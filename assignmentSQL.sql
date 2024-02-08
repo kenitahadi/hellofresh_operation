@@ -2,10 +2,24 @@
 --For the customer with email address ‘ilovefood83@hotmail.com’ show all product_skus the
 --customer has an active subscription for
 
+SELECT p.product_SKU
+FROM customer c
+JOIN subscription s ON c.id_customer = s.fk_customer
+JOIN product p ON s.fk_product_subscribed_to = p.id_product
+WHERE c.email = 'ilovefood83@hotmail.com' 
+AND s.status = 'active';
 
 --Request 2
 --Get a list of all the customers (id_customer) that have an active subscription to a product
 --that corresponds to a product family with product_family_handle = ‘classic-box’
+
+SELECT DISTINCT c.id_customer
+FROM customer c
+JOIN subscription s ON c.id_customer = s.fk_customer
+JOIN product p ON s.fk_product_subscribed_to = p.id_product
+JOIN product_family pf ON p.fk_product_family = pf.id_product_family
+WHERE s.status = 'active'
+AND pf.product_family_handle = 'classic-box';
 
 
 --Request 3
