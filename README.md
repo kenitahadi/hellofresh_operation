@@ -7,12 +7,12 @@ This exercise aims to apply Python for Data Wrangling in a real case study for H
 
 ## Prerequisites
 1. Python 3.9.12
-2. Visual Code Studio
-3. Pandas
+2. Visual Code Studio for Python Intepreter 
+3. Pandasfor Data Wrangling
+5. Fuzzywuzzy for String Matching
+
+## Installations for packages
+1. Pandas via Command Prompt
 `` pip install pandas ``
-5. Fuzzywuzzy
+2. Fuzzywuzzy via Command Prompt
 `` pip install fuzzywuzzy``
-
-## Installations
-
-
