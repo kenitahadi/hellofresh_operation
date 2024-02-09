@@ -9,6 +9,7 @@ This exercise aims to apply Python for Data Wrangling such as data cleaning, sta
 This exercise is ran using Python version 3.9.12
 
 ## Installations for required dependencies
+To be executed in Command Prompt Windows
 1. Pandas 
 `` pip install pandas ``
 2. Fuzzywuzzy 
@@ -17,15 +18,15 @@ This exercise is ran using Python version 3.9.12
 `` pip install Isodate``
 
 ## Usage
-1. Ensure that your ingredients dataset is in a compatible format (e.g., CSV, Excel, JSON).
-2. Modify the `config.py` file to specify the input dataset file path, output file path, and any other configurations as needed.
-3. Run the `main.py` script:
-4. The program will execute data wrangling tasks on the provided dataset.
-5. The cleaned dataset will be saved in the specified output file path.
+1. Ensure that the dataset saved in the original format (JSON).
+2. Make sure that the downloaded JSON file in located in the same folder wih the `recipe_reader.py`
+3. Run the `recipe_reader.py` script:
+4. The program will execute data wrangling tasks on the provided dataset, resulting in 4 csv datasets based on the completion of each required task. 
+5. The final dataset `recipes_chilies_only_final.csv' will be saved in the specified output file path.
 
 ## Dependencies
 
-- **pandas**: Used for data manipulation and analysis, providing powerful data structures and functions.
+- **pandas**: Used for data manipulation and analysis, providing powerful data structures and functions. 
 - **fuzzywuzzy**: Enables fuzzy string matching, useful for handling variations or misspellings in ingredient names.
 - **isodate**: Helps with parsing and formatting ISO 8601 dates, if needed in the dataset.
 
